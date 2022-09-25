@@ -48,7 +48,7 @@ header{
     color: var(--white);
       background-color: var(--steelblu);
 }
-main li{
+section li{
   display: flex;
   flex: 1 0 0;
   text-decoration: none;
@@ -63,13 +63,24 @@ main li{
   width: 105vw;
   margin:0.5rem 0 1rem -5rem;
 }
-.contact-list{
-  list-style-type: none;
-  text-shadow: var(--drop);
-  color: var(--white);
-  background-color: var(--steelblu); 
+section p{
+  font-size: 1.5rem;
 }
+.contact-list{
 
+  list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    color: var(--bluetext);
+}
+.contact-list li{
+  font-size: 2rem;
+  text-decoration: underline var(--bluetext);
+  margin-bottom: 1rem;
+
+}
 .vlborder{
   border-right: 1rem solid var(--white);
  
@@ -90,6 +101,7 @@ main li{
   justify-content: space-evenly; 
   margin: 0 3% 0 2%;
   width: 90%;
+  margin-top: 1rem;
 }
 .subimage{ 
   display: inline-block;
@@ -98,7 +110,18 @@ main li{
     width: 10%;
     height: auto;
   }
+a{
 
+  display: inherit !important;
+  width: inherit !important;
+  height: inherit !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
 @media screen and (min-width: 762px) {
   .title{
     flex-direction: row;
