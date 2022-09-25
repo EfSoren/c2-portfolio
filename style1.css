@@ -63,11 +63,8 @@ main li{
   width: 105vw;
   margin:0.5rem 0 1rem -5rem;
 }
-.contactlist{
+.contact-list{
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-shadow: var(--drop);
   color: var(--white);
   background-color: var(--steelblu); 
