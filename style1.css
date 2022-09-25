@@ -63,6 +63,15 @@ main li{
   width: 105vw;
   margin:0.5rem 0 1rem -5rem;
 }
+.contactlist{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: var(--drop);
+  color: var(--white);
+  background-color: var(--steelblu); 
+}
 
 .vlborder{
   border-right: 1rem solid var(--white);
@@ -81,11 +90,18 @@ main li{
 } 
   .imgsmall{
   display: flex;
-  width: 10px;
-  flex: 0 1 0;
-  height: auto;
-  max-width: 40%;
+  justify-content: space-evenly; 
+  margin: 0 3% 0 2%;
+  width: 90%;
+}
+.subimage{ 
+  display: inline-block;
+  flex-wrap: nowrap;
+  flex: 1 1 0;
+    width: 10%;
+    height: auto;
   }
+
 @media screen and (min-width: 762px) {
   .title{
     flex-direction: row;
