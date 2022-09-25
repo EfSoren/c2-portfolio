@@ -1,10 +1,10 @@
 *{
   background-color: #cecac6;
-  color: black;
   font-size: 10px;
 }
 :root{
   --steelblue: steelblue;
+  --bluetext: rgb(4, 89, 158);
   --white: whitesmoke;
   --drop: 2px 2px black;
   }
@@ -40,26 +40,52 @@ header{
   }
   
   header li{
-    margin: 5px;
+    margin: 5px 0 0 -12.5%;
+    justify-content: center;
     text-decoration: underline var(--white);
     text-shadow: var(--drop);
     font-size: 2.5rem;
     color: var(--white);
       background-color: var(--steelblu);
 }
-
-aside li{
+main li{
   display: flex;
+  flex: 1 0 0;
   text-decoration: none;
-  align-content: left;
-  color: #09203F;
+  justify-content: center;
+  color: var(--bluetext);
   font-size: 2.5rem;
+  font-weight: bolder;
   text-shadow: none;
-  width: 25%;
-  margin-left: -2rem;
-  border: 5px thick #09203F;
+  margin-left: -5vw;
+  padding-right: 1rem;
+  border-bottom: 1rem solid var(--white);
+  width: 105vw;
+  margin:0.5rem 0 1rem -5rem;
 }
 
+.vlborder{
+  border-right: 1rem solid var(--white);
+ 
+  height: 100%;
+  left: 5vw;
+  position: absolute;
+  margin-top: 1rem;
+}
+ .hero{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+  margin-left: 2%;
+} 
+  .imgsmall{
+  display: flex;
+  width: 10px;
+  flex: 0 1 0;
+  height: auto;
+  max-width: 40%;
+  }
 @media screen and (min-width: 762px) {
   .title{
     flex-direction: row;
