@@ -48,7 +48,10 @@ header{
     color: var(--white);
     background-color: var(--steelblu);
 }
-section li{
+ header ul li a{
+  background-color: var(--steelblu);
+ }
+section li div{
   display: flex;
   flex: 1 0 0;
   text-decoration: none;
@@ -63,8 +66,12 @@ section li{
   width: 105vw;
   margin:0.5rem 0 1rem -5rem;
 }
+section ul{
+  list-style-type: none;
+}
 section p{
   font-size: 1.5rem;
+  text-align: center;
 }
 .contact-list{
 
@@ -178,29 +185,40 @@ h4{
   .box2{
     left: 2%;
   }
-  section ul li{
+  section ul li div{
      font-size: 4rem;
-  }
-  @media screen and (min-width: 992px) {
-    header ul{
-      flex: 1 1 0;
-      float: right;
+     margin-left: -7%;
     }
-    header li{
-      flex-wrap: nowrap;
-      margin: 0;
-    }
-    section li{
-      margin-left: -5%;
-    }
-    .hero{
-      width: 60%
-    }
-   h3{
-    font-size: 3rem;
-   }
-   h4{
+    @media screen and (min-width: 992px) {
+      section ul li div{
+         margin-left: 0;
+      }
+ 
+      header ul{
+        flex: 1 1 0;
+        float: right;
+      }
+      header li{
+        flex-wrap: nowrap;
+        margin: 0;
+      }
+      section li{
+        margin-left: -5%;
+      }
+      .hero {
+        position: relative;
+        width: 80%;
+        margin: 0 10%;
+        
+      }
+      h3{
+        font-size: 3rem;
+      }
+      h4{
     font-size: 2.5rem;
-   }
   }
+      section p{
+        font-size: 2.5rem;
+      }
+}
 }
