@@ -12,6 +12,7 @@ N/A
 Contains links at the top to navigate the page </br>
 Clicking on a project image will take you to the deployed site </br>
 Contact links at the bottom to reach out to me </br>
+Formatted to different screen sizes </br>
 
 ## Credits
 N/A
