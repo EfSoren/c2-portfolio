@@ -1,0 +1,224 @@
+*{
+  background-color: #cecac6;
+  font-size: 10px;
+}
+:root{
+  --steelblue: steelblue;
+  --bluetext: rgb(4, 89, 158);
+  --white: whitesmoke;
+  --drop: 2px 2px black;
+  }
+
+header{
+  background-color: var(--steelblue);
+  width: 100vw;
+}
+.title{
+  display: flex;
+  text-shadow: var(--drop);
+  margin: -1rem;
+  flex: 1 0 0;
+  flex-wrap: wrap;
+  align-content: center;
+  font-weight: bold;
+  flex-direction: column;
+  font-size: 5rem;
+  color: var(--white);
+  background-color: var(--steelblue);
+  background-image: linear-gradient(
+    #09203F 0%,
+    #537895 100%);
+}
+  header ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: var(--drop);
+    color: var(--white);
+    background-color: var(--steelblu); 
+  }
+  
+  header li{
+    margin: 5px 0 0 -12.5%;
+    justify-content: center;
+    text-decoration: underline var(--white);
+    text-shadow: var(--drop);
+    font-size: 2.5rem;
+    color: var(--white);
+    background-color: var(--steelblu);
+}
+ header ul li a{
+  background-color: var(--steelblu);
+ }
+section li div{
+  display: flex;
+  flex: 1 0 0;
+  text-decoration: none;
+  justify-content: center;
+  color: var(--bluetext);
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-shadow: none;
+  margin-left: -5vw;
+  padding-right: 1rem;
+  border-bottom: 1rem solid var(--white);
+  width: 105vw;
+  margin:0.5rem 0 1rem -5rem;
+}
+section ul{
+  list-style-type: none;
+}
+section p{
+  font-size: 1.5rem;
+  text-align: center;
+}
+.contact-list{
+
+  list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    color: var(--bluetext);
+}
+.contact-list li{
+  font-size: 2rem;
+  text-decoration: underline var(--bluetext);
+  margin-bottom: 1rem;
+
+}
+.vlborder{
+  border-right: 1rem solid var(--white);
+ 
+  height: 100%;
+  left: 5vw;
+  position: absolute;
+  margin-top: 1rem;
+}
+ .hero img{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+  margin-left: 2%;
+} 
+  .imgsmall{
+  display: flex;
+  justify-content: space-evenly; 
+  margin: 0 3% 0 2%;
+  width: 90%;
+  margin-top: 1rem;
+}
+.subimage{ 
+  display: inline-block;
+  flex-wrap: nowrap;
+  flex: 1 1 0;
+  width: 10%;
+  height: auto;
+  border: 1px solid slategray;
+}
+.imgsmall .subimage{
+  position: relative;
+}
+a{
+
+  display: inherit !important;
+  width: inherit !important;
+  height: inherit !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+.container{
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+  background-color: var(--steelblue);
+  background-image: linear-gradient(
+    #09203F 0%,
+    #537895 100%);
+  color: var(--white);
+  padding: 0 15px;
+  
+}
+.box{
+
+}
+.box2{
+  position: absolute;
+  bottom: 0;
+  left: .7rem;
+  background-color: var(--steelblue);
+  background-image: linear-gradient(
+    #09203F 0%,
+    #537895 100%);
+  color: var(--white);
+  padding: 0 15px;
+}
+.box .hero{
+  position: relative;
+}
+h3{
+  background-color: var(--steelblu);
+  font-size: 1.5rem;
+}
+h4{
+  background-color: var(--steelblu);
+
+}
+@media screen and (min-width: 762px) {
+  .title{
+    flex-direction: row;
+    justify-content: center;
+  }
+  header ul{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  header li{
+    margin: 0 20px;
+  } 
+  .box2{
+    left: 2%;
+  }
+  section ul li div{
+     font-size: 4rem;
+     margin-left: -7%;
+    }
+    @media screen and (min-width: 992px) {
+      section ul li div{
+         margin-left: 0;
+      }
+ 
+      header ul{
+        flex: 1 1 0;
+        float: right;
+      }
+      header li{
+        flex-wrap: nowrap;
+        margin: 0;
+      }
+      section li{
+        margin-left: -5%;
+      }
+      .hero {
+        position: relative;
+        width: 80%;
+        margin: 0 10%;
+        
+      }
+      h3{
+        font-size: 3rem;
+      }
+      h4{
+    font-size: 2.5rem;
+  }
+      section p{
+        font-size: 2.5rem;
+      }
+}
+}
